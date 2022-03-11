@@ -30,8 +30,8 @@
                     <input type="text" name="" id="" placeholder="NOME">
                     <input type="email" name="" id="" placeholder="E-MAIL">
                     <input type="password" name="" id="" placeholder="SENHA">
-                    <input type="text" name="" id="" placeholder="CPF">
-                    <input type="text" name="" id="" placeholder="CELULAR">
+                    <input type="text" name="" id="" onkeydown="javascript: fMasc( this, mCPF );" maxlength="14" placeholder="CPF">
+                    <input type="text" name="" id="" onkeypress="mask(this, mphone);" placeholder="CELULAR">
                     <input type="text" name="" id="" placeholder="ÁREA DE ATUAÇÃO">
     
                     <button class="btn_send_form" type="submit">INSCREVA-SE!</button>
@@ -42,71 +42,93 @@
             
         </section>
 
-        <section>
-            <header>
-                <h2>Ganhe mais tempo e prática na <br> <strong>palma da sua mão</strong></h2>
-            </header>
-
-            <section>
-                <article>
-                    <img src="" alt="">
-                    <h3>ECONOMIZE TEMPO</h3>
-                    <p>Aproveite nossa funcionalidade de suporte para grupos. Você pode criar grupos de alunos e garantir um treino personalizado para cada um.</p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <h3>EVOLUÇÃO DO ATLETA</h3>
-                    <p>Tenha gráficos disponíveis para acompanhar o desempenho do atleta</p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <h3>GERENCIE SEUS CLIENTES</h3>
-                    <p>Adicione novos clientes, acompanhe os progressos e mantenha a comunicação.</p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-                    <h3>MULTIPLATAFORMAS</h3>
-                    <p>Acesse de qualquer dispositivo sem perder a qualidade de sua experiência</p>
-                </article>
-            </section>
-
-            <a href="#">QUERO TESTAR GRATUITAMENTE POR 15 DIAS!</a>
-            <p>*não precisa cadastrar cartão de crédito nesse período</p>
+        <section class="container-full sec_van">
+            <div class="sec_content container">
+                <header class="header_van">
+                    <h2>Ganhe mais tempo e prática na <br> <strong>palma da sua mão</strong></h2>
+                </header>
+    
+                <section class="cards_van_sec">
+                    <article class="card_van">
+                        <img src="assets/img/rec_time.png" alt="">
+                        <h3>ECONOMIZE TEMPO</h3>
+                        <p>Aproveite nossa funcionalidade de suporte para grupos. Você pode criar grupos de alunos e garantir um treino personalizado para cada um.</p>
+                    </article>
+    
+                    <article class="card_van">
+                        <img src="assets/img/rec_grow.png" alt="">
+                        <h3>EVOLUÇÃO DO ATLETA</h3>
+                        <p>Tenha gráficos disponíveis para acompanhar o desempenho do atleta</p>
+                    </article>
+    
+                    <article class="card_van">
+                        <img src="assets/img/rec_manage.png" alt="">
+                        <h3>GERENCIE SEUS CLIENTES</h3>
+                        <p>Adicione novos clientes, acompanhe os progressos e mantenha a comunicação.</p>
+                    </article>
+    
+                    <article class="card_van">
+                        <img src="assets/img/rec_mult.png" alt="">
+                        <h3>MULTIPLATAFORMAS</h3>
+                        <p>Acesse de qualquer dispositivo sem perder a qualidade de sua experiência</p>
+                    </article>
+                </section>
+                
+                <div class="sec_van_bottom">
+                    <a class="btn_cta" href="#">QUERO TESTAR GRATUITAMENTE POR 15 DIAS!</a>
+                    <p>*não precisa cadastrar cartão de crédito nesse período</p>
+                </div>
+                
+            </div>
+            
         </section>
 
-        <section>
-            <header>
-                <h2>Ainda em dúvidas? <br> Descubra algumas funcionalidades <br> do COACH CONTROL!</h2>
-            </header>
-
-            <div>
-                <div>
-                    <p>01 - Otimize tempo</p>
-                    <span>Replicação de treinos em grupo</span>
-
-                    <p>02 - Avaliação</p>
-                    <span>Permite armazenar e gerenciar treinos avaliativos com gráficos de evolução</span>
-
-                    <p>03 - Anexe vídeos</p>
-                    <span>Anexação de vídeos pelo treinador e também pelo aluno na plataforma!</span>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                </div>
-
-                <div>
-                    <p>04 - Crie Treinos</p>
-                    <span>Criação e gerenciamento de treinos individualizados e 100% personalizados</span>
-
-                    <p>05 - Liberdade geográfica</p>
-                    <span>Programe os treinos de seus alunos pelo computador, pelo celular de qualquer lugar! Desde que tenha acesso a internet, é claro.</span>
-
-                    <p>06 - Monitore</p>
-                    <span>Monitoramento de resultados por meio de feedbacks que podem ser enviados pelos alunos no aplicativo.</span>
+        <section class="sec_features container-full">
+            <div class="features_content container">
+                <header class="header_features">
+                    <h2>Ainda em dúvidas? <br> Descubra algumas funcionalidades <br> do COACH CONTROL!</h2>
+                </header>
+    
+                <div class="features_app">
+                    <div class="features_left">
+                        <div class="row">
+                            <p>01 - Otimize tempo</p>
+                            <span>Replicação de treinos em grupo</span>
+                        </div>
+                        
+                        <div class="row">
+                            <p>02 - Avaliação</p>
+                            <span>Permite armazenar e gerenciar treinos avaliativos com gráficos de evolução</span>
+                        </div>
+                        
+                        <div class="row">
+                            <p>03 - Anexe vídeos</p>
+                            <span>Anexação de vídeos pelo treinador e também pelo aluno na plataforma!</span>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="features_center">
+                        <img src="assets/img/phone.png" alt="">
+                    </div>
+    
+                    <div class="features_right">
+                        <div class="row">
+                            <p>04 - Crie Treinos</p>
+                            <span>Criação e gerenciamento de treinos individualizados e 100% personalizados</span>
+                        </div>
+                        
+                        <div class="row">
+                            <p>05 - Liberdade geográfica</p>
+                            <span>Programe os treinos de seus alunos pelo computador, pelo celular de qualquer lugar! Desde que tenha acesso a internet, é claro.</span>
+                        </div>
+    
+                        <div class="row">
+                            <p>06 - Monitore</p>
+                            <span>Monitoramento de resultados por meio de feedbacks que podem ser enviados pelos alunos no aplicativo.</span>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
 
@@ -178,6 +200,8 @@
             <img src="" alt="">
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>

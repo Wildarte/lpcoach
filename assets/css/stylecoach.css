@@ -1,5 +1,6 @@
 :root{
     --color-blue: #0899AB;
+    --color-blue2: #76C6A5;
 }
 
 .container{
@@ -16,8 +17,8 @@ header.header{
     text-align: center;
 }
 .intro_form{
-    border-top: 1px solid rgba(200, 200, 200, .8);
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid rgba(200, 200, 200, .7);
+    border-bottom: 1px solid rgba(200, 200, 200, .8);
 }
 .intro_form_content{
     display: flex;
@@ -35,12 +36,12 @@ header.header{
 .intro_left h3{
     text-transform: uppercase;
     font-size: 1em;
-    margin: 20px 0;
+    margin: 20px 0 30px;
     opacity: 0.9;
 }
 .intro_left h2{
     font-size: 1.9em;
-    line-height: 1.8em;
+    line-height: 1.6em;
     font-weight: 300;
     color: #eee;
     opacity: 0.8;
@@ -98,3 +99,190 @@ form.form .btn_send_form:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
+
+.sec_van{
+    padding: 90px 0 100px;
+    color: #fff;
+    border-bottom: 1px solid rgba(200, 200, 200, .8);
+}
+
+.sec_content{
+    padding: 80px 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_van{
+    width: 100%;
+    text-align: center;
+}
+.header_van h2{
+    font-size: 3.8em;
+    color: #ddd;
+    margin: 40px auto 10px;
+    font-weight: 300;
+}
+.header_van h2 strong{
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.cards_van_sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_van{
+    flex-basis: calc(25% - 30px);
+    margin: 15px;
+    padding: 15px;
+}
+
+.card_van img{
+    width: 100%;
+}
+.card_van h3{
+    color: var(--color-blue2);
+    padding: 10px;
+}
+.card_van p{
+    padding: 10px;
+    color: #ddd;
+    line-height: 1.5em;
+}
+.sec_van_bottom{
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn_cta{
+    text-decoration: none;
+    color: #253D57;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 10px auto;
+    padding: 20px 40px;
+    border-radius: 40px;
+    transition: all .23s;
+}
+.btn_cta:hover{
+    transform: scale(1.03);
+}
+.sec_van_bottom p{
+    width: 100%;
+    font-size: 1.4em;
+}
+
+.sec_features{
+    padding: 40px 0 60px;
+}
+.features_content{
+    padding: 20px 10px;
+}
+.header_features{
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+}
+.header_features h2{
+    color: #ddd;
+    font-size: 3em;
+}
+
+.features_app{
+    display: flex;
+    flex-wrap: wrap;
+}
+.features_left, .features_right{
+    flex-basis: calc(28% - 20px);
+    margin: 10px;
+    color: #fff;
+}
+.features_center{
+    flex-basis: calc(44% - 20px);
+    margin: 10px;
+}
+.features_center img{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.features_left .row{
+    margin: 10px 0 100px;
+}
+.features_left .row:nth-child(1){
+    margin-top: 100px;
+}
+.features_left .row p{
+    color: #eee;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.features_left .row span{
+    color:  #ccc;
+    font-size: 1.2em;
+    position: relative;
+}
+.features_left .row span{
+    margin: 10px 0;
+}
+
+
+/* ============= lines left phone ============= */
+.features_left .row span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: block;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    width: 280px;
+    height: 100px;
+    transform: skewX(50deg);
+}
+
+/* ============= lines left phone ============= */
+
+
+
+
+.features_right .row{
+    margin: 10px 0 80px;
+    text-align: right;
+}
+.features_right .row:nth-child(1){
+    margin-top: 200px;
+}
+.features_right .row p{
+    color: #eee;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.features_right .row span{
+    color:  #ccc;
+    font-size: 1.2em;
+    position: relative;
+}
+.features_right .row span{
+    margin: 10px 0;
+}
+
+
+/* ============= lines right phone ============= */
+.features_right .row span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 60px;
+    display: block;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    width: 280px;
+    height: 100px;
+    transform: skewX(-50deg);
+}
+
+/* ============= lines right phone ============= */
