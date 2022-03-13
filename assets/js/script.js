@@ -1,42 +1,52 @@
 function fMasc(objeto,mascara) {
-    obj=objeto
-    masc=mascara
-    setTimeout("fMascEx()",1)
-    }
+  obj=objeto
+  masc=mascara
+  setTimeout("fMascEx()",1)
+  }
 
-    function fMascEx() {
-    obj.value=masc(obj.value)
-    }
+  function fMascEx() {
+  obj.value=masc(obj.value)
+  }
 
-    function mCPF(cpf){
-    cpf=cpf.replace(/\D/g,"")
-    cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
-    cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
-    cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
-    return cpf
+  function mCPF(cpf){
+  cpf=cpf.replace(/\D/g,"")
+  cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+  cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+  cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
+  return cpf
 }
 function mask(o, f) {
-    setTimeout(function() {
-      var v = mphone(o.value);
-      if (v != o.value) {
-        o.value = v;
-      }
-    }, 1);
-  }
-  
-  function mphone(v) {
-    var r = v.replace(/\D/g, "");
-    r = r.replace(/^0/, "");
-    if (r.length > 10) {
-      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-    } else if (r.length > 5) {
-      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-    } else if (r.length > 2) {
-      r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-    } else {
-      r = r.replace(/^(\d*)/, "($1");
+  setTimeout(function() {
+    var v = mphone(o.value);
+    if (v != o.value) {
+      o.value = v;
     }
-    return r;
+  }, 1);
+}
+  
+function mphone(v) {
+  var r = v.replace(/\D/g, "");
+  r = r.replace(/^0/, "");
+  if (r.length > 10) {
+    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+  } else if (r.length > 5) {
+    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+  } else if (r.length > 2) {
+    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+  } else {
+    r = r.replace(/^(\d*)/, "($1");
   }
+  return r;
+}
+const sec_img = document.querySelector('.sec_features');
 
+const recImg = sec_img.getBoundingClientRect();
+
+
+
+console.log(sec_img.offsetTop);
+console.log(recImg)
+document.addEventListener('scroll', () => {
+    
+});
 
